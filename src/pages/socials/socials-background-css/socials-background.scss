@@ -1,0 +1,216 @@
+.socials-left-bumper {
+    background-color: #ff5cac;
+    height: 100vh;
+    width: 24%;
+    position: absolute;
+    left: -100px;
+    transform: skewX(-13deg);
+    border-right-color: #f50ca0;
+    border-right-style: solid;
+    border-right-width: 10px;   
+}
+
+// .animate-socials-left-bumper {
+//     animation: skew-bumper 1s ease-out forwards;
+
+//     @keyframes skew-bumper {
+//         from {
+//             opacity: 0;
+//         }
+      
+//         to {
+//             opacity: 1;
+//         }
+//     }
+// }
+
+.socials-top-left-line {
+    background-color: #ff5cac;
+    height: 50vh;
+    width: 7vw;
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    transform: skewX(40deg);
+    border-left-color: #f50ca0;
+    border-left-style: solid;
+    border-left-width: 10px;
+    
+}
+
+// .animate-socials-top-left-line {
+//     animation: skew-top-left-line 1s ease-out forwards;
+
+//     @keyframes skew-top-left-line {
+//         from {
+//             opacity: 0;
+//         }
+      
+//         to {
+//             opacity: 1;
+//         }
+//     }
+// }
+
+.socials-top-right-line {
+    background-color: #5ce1e6;
+    height: 50vh;
+    width: 7vw;
+    position: absolute;
+    right: 10vw;
+    transform: skewX(-40deg);
+    border-right-color: #00c2cb;
+    border-right-style: solid;
+    border-right-width: 10px;
+}
+
+// .animate-socials-top-right-line {
+//     animation: skew-top-right-line 1s ease-out forwards;
+
+//     @keyframes skew-top-right-line {
+//         from {
+//             opacity: 0;
+//         }
+      
+//         to {
+//             opacity: 1;
+//         }
+//     }
+// }
+
+.socials-bottom-right-line {
+    background-color: #ff5cac;
+    height: 400px;
+    width: 13vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: skewX(-66deg);
+    border-left-color: #f50ca0;
+    border-left-style: solid;
+    border-left-width: 15px;
+}
+
+// .animate-socials-bottom-right-line {
+//     animation: skew-bottom-right-line 1s ease-out forwards;
+
+//     @keyframes skew-bottom-right-line {
+//         from {
+//             opacity: 0;
+//         }
+      
+//         to {
+//             opacity: 1;
+//         }
+//     }
+// }
+
+.socials-bottom-left-line {
+    background-color: #5ce1e6;
+    height: 50vh;
+    width: 7vw;
+    position: absolute;
+    bottom: 0;
+    right: 10vw;
+    transform: skewX(40deg);
+    border-right-color: #00c2cb;
+    border-right-style: solid;
+    border-right-width: 10px;
+}
+
+// .animate-socials-bottom-left-line {
+//     animation: skew-bottom-left-line 1s ease-out forwards;
+
+//     @keyframes skew-bottom-left-line {
+//         from {
+//             opacity: 0;
+//         }
+      
+//         to {
+//             opacity: 1;
+//         }
+//     }
+// }
+
+.custom-shape-divider-bottom-socials-page {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+}
+
+.custom-shape-divider-bottom-socials-page svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+
+    @media only screen and (max-width: 700px) {
+        height: 125px;
+    }
+}
+
+.custom-shape-divider-bottom-socials-page .shape-fill {
+    fill: #5ce1e6;
+}
+
+.custom-shape-divider-bottom-socials-page-1 {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+}
+
+
+.custom-shape-divider-bottom-socials-page-1 svg {
+    position: relative;
+    display: block;
+    width: calc(100%  + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+
+    @media only screen and (max-width: 700px) {
+        height: 125px;
+    }
+    
+}
+
+.custom-shape-divider-bottom-socials-page-1 .shape-fill {
+    fill: #00c2cb;
+}
+
+.custom-shape-divider-bottom-socials-page-2 {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 0;
+}
+
+
+.custom-shape-divider-bottom-socials-page-2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+
+    @media only screen and (max-width: 700px) {
+        height: 125px;
+    }
+
+}
+
+.custom-shape-divider-bottom-socials-page-2 .shape-fill {
+    fill: #03989e;
+}

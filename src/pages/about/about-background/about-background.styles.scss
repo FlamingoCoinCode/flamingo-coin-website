@@ -1,0 +1,187 @@
+.custom-shape-divider-top-about {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+}
+
+.custom-shape-divider-top-about svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+    transform: rotateX(180deg);
+
+    @media only screen and (max-width: 700px) {
+        height: 125px;
+    }
+}
+
+.custom-shape-divider-top-about .shape-fill {
+    fill: #5ce1e6;
+}
+
+.custom-shape-divider-top-about-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+}
+
+
+.custom-shape-divider-top-about-1 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+    transform: rotateX(180deg);
+
+    @media only screen and (max-width: 700px) {
+        height: 125px;
+    }
+}
+
+.custom-shape-divider-top-about-1 .shape-fill {
+    fill: #00c2cb;
+}
+
+.custom-shape-divider-top-about-2 {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 0;
+}
+
+
+.custom-shape-divider-top-about-2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+    transform: rotateX(180deg);
+
+    @media only screen and (max-width: 700px) {
+        height: 125px;
+    }
+
+}
+
+.custom-shape-divider-top-about-2 .shape-fill {
+    fill: #03989e;
+}
+
+.about-page-right-bumper {
+    background-color: #5ce1e6;
+    height: 100vh;
+    width: 200px;
+    position: absolute;
+    right: -150px;
+    transform: skewX(-13deg);
+    border-left-color: #00c2cb;
+    border-left-style: solid;
+    border-left-width: 10px;
+
+    @media only screen and (max-width: 900px) {
+        height: 0;
+        width: 0;
+    }
+}
+
+.about-page-right-bumper-2 {
+    background-color: #5ce1e6;
+    height: 100vh;
+    width: 200px;
+    position: absolute;
+    right: -150px;
+    top: 100vh;
+    transform: skewX(13deg);
+    border-left-color: #00c2cb;
+    border-left-style: solid;
+    border-left-width: 10px;
+
+    @media only screen and (max-width: 900px) {
+        height: 0;
+        width: 0;
+    }
+}
+
+.custom-shape-divider-bottom-about {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+}
+
+.custom-shape-divider-bottom-about svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+
+}
+
+.custom-shape-divider-bottom-about .shape-fill {
+    fill: #FFff;
+}
+
+.custom-shape-divider-bottom-about-1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+}
+
+
+.custom-shape-divider-bottom-about-1 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-about-1 .shape-fill {
+    fill: #ff5cac;
+}
+
+.custom-shape-divider-bottom-about-2 {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 0;
+}
+
+
+.custom-shape-divider-bottom-about-2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-about-2 .shape-fill {
+    fill: #f50ca0;
+}

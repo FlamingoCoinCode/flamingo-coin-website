@@ -1,0 +1,45 @@
+.node {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border-color: #5CE1E6;
+    border-style: solid;
+    border-width: 6px;
+    margin-left: -8.4px;
+    z-index: 6;
+    background-color: #FF5BAC;
+    transform: scale(1);
+    transition: .5s;
+
+    &:hover {
+        transform: scale(1.7);
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .nav-text {
+        margin-top: -20px;
+        width: 120px;
+        padding-left: 20px;
+        color: #5CE1E6;
+        font-style: italic;
+        animation: slide-in .5s forwards;
+        z-index: 6;
+    }
+
+    @keyframes slide-in {
+        from {
+          margin-left: -20px;
+        }
+      
+        70% {
+          margin-right: 90%;
+        }
+      
+        to {
+          margin-right: 0%;
+        }
+      }
+
+      
+}

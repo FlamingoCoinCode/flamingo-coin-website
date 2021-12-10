@@ -1,0 +1,53 @@
+.header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    animation: fade-in 1s ease;
+    background-color: white;
+    z-index: 6;
+
+
+    .header-logo-container {
+        height: 100%;
+        width: 60px;
+        padding: 15px;
+    }
+
+    .header-logo {
+        width: 100%;
+        height: auto;
+    }
+
+    .header-title-container {
+        width: 100%;
+        font-family: 'hitAndRun', sans-serif;
+        color: #f50ca0;
+        letter-spacing: 2px;
+    }
+
+
+    a {
+        text-decoration: none;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
