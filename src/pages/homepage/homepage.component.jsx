@@ -22,10 +22,10 @@ const HomePage = () => (
                     <h2 className='sub-title'>Powered by</h2>
                     <img className='algorand-logo' src={Algorand} alt='algorand logo'/>
                   </div> }
-                
             </div>
         </div>
     </div>
+    
 )
 
 export default HomePage
