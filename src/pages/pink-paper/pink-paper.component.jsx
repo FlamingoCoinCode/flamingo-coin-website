@@ -1,14 +1,22 @@
-import React from 'react'
+import React, {useEffect, useContext} from 'react'
 import './pink-paper.styles.scss'
 import PinkPaperBackgrounds from './pink-paper-backgrounds/pink-paper-backgrounds'
 import PinkDocument from '../../logos/pink-document.png'
 import { useInView } from 'react-intersection-observer'
+
+import { PageInViewContext } from '../../contexts/inview.context'
+
 const PinkPaperPage = () => {
 
+    const {pageInView, setPageInView} = useContext(PageInViewContext)
+
     const { ref, inView} = useInView({
-    threshold: .7,
-    triggerOnce: true,
+    threshold: .5,
   });
+
+    useEffect(() => {
+        setPageInView({...pageInView, pinkPaper: inView}) 
+    }, [inView])
 
     return  (
     <div className='pink-paper' id='pink-paper'>

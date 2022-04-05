@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useContext, useEffect} from 'react'
 import './socials.styles.scss'
 import SocialsBackground from './socials-background-css/socials-background'
 import discord from '../../logos/social-icons/discord.png'
@@ -7,13 +7,21 @@ import twitter from '../../logos/social-icons/twitter.png'
 import telegram from '../../logos/social-icons/telegram.png'
 
 import { useInView } from 'react-intersection-observer';
+import { PageInViewContext } from '../../contexts/inview.context'
 
 const SocialsPage = () => {
+    const {pageInView, setPageInView} = useContext(PageInViewContext)
 
     const { ref, inView} = useInView({
-    threshold: .7,
-    triggerOnce: true,
+    threshold: .5,
+    // triggerOnce: true,
   });
+
+    useEffect(() => {
+        setPageInView({...pageInView, socials: inView}) 
+    }, [inView])
+
+
 
     return (
         <div className='socials-page' id='socials'>

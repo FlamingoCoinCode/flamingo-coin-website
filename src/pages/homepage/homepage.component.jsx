@@ -1,14 +1,30 @@
-import React from 'react'
+import React, {useContext, useEffect} from 'react'
 import './homepage.styles.scss'
 import useCheckMobileScreen from '../../components/mobile-checker/mobile-checker.component'
 import HomepageBackground from './homepage-background/homepage-background.component'
 import FlamingoLogo from '../../logos/Official-Logo-Website-Pink.png'
 import Algorand from '../../logos/algorand_full_logo_black.png'
 
+import { PageInViewContext } from '../../contexts/inview.context'
+
+import { useInView } from 'react-intersection-observer';
+
+const HomePage = () => {
+  const {pageInView, setPageInView} = useContext(PageInViewContext)
+
+  const { ref, inView} = useInView({
+    threshold: .5,
+  });
+
+  useEffect(() => {
+      setPageInView({
+      ...pageInView, home: inView
+    });
+  }, [inView])
 
 
-const HomePage = () => (
-    <div className='homepage' id='homepage'>
+  return (
+    <div ref={ref} className='homepage' id='homepage'>
       <HomepageBackground/>
       <div className='title-container'>
             <div className='logo-container'>
@@ -25,7 +41,10 @@ const HomePage = () => (
             </div>
         </div>
     </div>
+  )
+}
+
     
-)
+
 
 export default HomePage

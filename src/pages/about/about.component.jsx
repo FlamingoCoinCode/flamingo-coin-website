@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useContext, useEffect} from 'react'
 import './about.styles.scss'
 import AboutBackground from './about-background/about-background.component'
 import FlamingoLogo from '../../logos/Official-Logo-Website-Pink.png'
@@ -6,13 +6,21 @@ import Decentralized from '../../logos/decentralized.png'
 import Algorand from '../../logos/algorand_logo_mark_black.png'
 import useCheckMobileScreen from '../../components/mobile-checker/mobile-checker.component'
 import { useInView } from 'react-intersection-observer';
+import { PageInViewContext } from '../../contexts/inview.context'
 
 const AboutPage = () => {
 
+    const {pageInView, setPageInView} = useContext(PageInViewContext)
+
     const { ref, inView} = useInView({
     threshold: .1,
-    triggerOnce: true,
   });
+
+    useEffect(() => {
+        setPageInView({
+        ...pageInView, about: inView
+        });
+    }, [inView])
 
     return (
     <div className='about-page' id='about'> 

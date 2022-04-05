@@ -4,9 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import {PageInViewProvider} from './contexts/inview.context'
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <PageInViewProvider>
+      <App />
+    </PageInViewProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

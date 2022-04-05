@@ -1,15 +1,23 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './nav-drawer.styles.scss'
 
-const NavDrawer = ({text}) => {
+const NavDrawer = ({text, pageInView}) => {
     const [drawer, setDrawer] = useState(false)
 
     const handleHover = () => {
-    setDrawer(drawer ? false : true)
+    
+    if (!pageInView) {
+        setDrawer(drawer ? false : true)
+    }
     }
 
+    useEffect(() => {
+            setDrawer(pageInView ? true : false)
+    }, [pageInView])
+
+
     return (
-        <div className='node' onMouseEnter={handleHover} onMouseLeave={handleHover}>
+        <div className={`node ${pageInView ? 'node-hover' : null}`} onMouseEnter={handleHover} onMouseLeave={handleHover}>
                 {drawer ? (
                     <div className='nav-text'>
                         <p>{text}</p>

@@ -9,10 +9,16 @@ import Header from './components/header/header.component'
 import Footer from './components/footer/footer.component'
 import useCheckMobileScreen from './components/mobile-checker/mobile-checker.component';
 
+
+
 function App() {
   return (
     <div>
-      {useCheckMobileScreen(700) ? <Header/> : <NavBar/>}
+      {useCheckMobileScreen(700) ? 
+        <Header/> 
+        : (
+            <NavBar/>
+        )}
       <HomePage/>
       <SocialsPage/>
       <AboutPage/>
